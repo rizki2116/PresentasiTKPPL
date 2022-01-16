@@ -4,11 +4,68 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>[ReactJS] Presentasi TKPPL</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
 		<link rel="stylesheet" href="dist/theme/black.css">
+		<link href="http://fonts.cdnfonts.com/css/calla-personal-use-only" rel="stylesheet">
+		<link href="http://fonts.cdnfonts.com/css/league-spartan" rel="stylesheet">
+                
+                
+		<style>
+			@import url('http://fonts.cdnfonts.com/css/calla-personal-use-only');
+			@import url('http://fonts.cdnfonts.com/css/league-spartan');
+			section img{
+			width: 100%;
+			height: 250px;
+			object-fit: contain;
+			}
+
+			section .card{
+				border-width: 3px !important;
+				border-style: solid !important;
+				border-image: linear-gradient( to right, #3db0dd, rgba(255, 255, 255, 0) ) 1 !important;
+				-webkit-box-shadow: 2px 2px 11px 0px rgba(230, 196, 196, 0.75);
+				-moz-box-shadow: 2px 2px 11px 0px rgba(0,0,0,0.75);
+				box-shadow: 2px 2px 11px 0px rgba(255, 255, 255, 0.75);
+				width: 80%;
+				margin: auto;
+				padding: 20px;
+			}
+			
+			section .card h5{
+				font-family: 'Calla Personal Use Only', sans-serif;
+				color: #3db0dd;
+
+			}
+			section .content p{
+				font-family: sans-serif;
+				font-size: 32px;
+				color: #f2fcdf;
+				text-align: justify;
+			}
+			section .content .lowa{
+				font-family: 'League Spartan', sans-serif;
+				text-align: center;
+			}
+			section .content h2{
+				font-family: 'League Spartan', sans-serif;
+				color: #f2fcdf;
+			}
+			section .content h3{
+				font-family: sans-serif;
+				font-size: 32px;
+				color: #f2fcdf;
+				text-align: justify;
+			}
+			section .content ul li{
+				font-family: sans-serif;
+				font-size: 28px;
+				color: #f2fcdf;
+				text-align: justify;
+			}
+		</style>
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
@@ -16,8 +73,111 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section class="logo">
+					<div class="card">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/1/18/React_Native_Logo.png">
+						<h5>React</h5>
+					</div>
+				</section>
+				<section data-background="#424d69">
+					<section id="fragments">
+						<div class="pengenalanreact">
+							<h2>Apa Itu React?</h2>
+							<p>React adalah library JavaScript bersifat open-source yang digunakan untuk membangun antarmuka pengguna (user interface).</p>
+							<p class="fragment">
+								React bekerja berdasarkan component-based. 
+								Dimana dalam membuat web aplikasi pada react terdiri dari komponen-komponen yang nantinya digabung menjadi satu.
+							</p>
+						</div>
+					</section>
+					<section>
+						<div class="content">
+							<h2>Apa Itu React?</h2>
+							<p>
+								React bersifat one way data flow, 
+								yaitu data atau step yang disimpan lebih terarah sehingga saat proses pembuatan interface jauh lebih mudah.
+							</p>
+							<p class="fragment lowa">Learn Once, Write Anywhere</p>
+							<p class="fragment">
+								Developer dapat men-develop fitur baru menggunakan react tanpa mengubah kode sebelumnya, 
+								react juga dapat bekerja menggunakan Node JS dan mobile apps menggunakan React Native. 
+							</p>
+						</div>		
+					</section>
+				</section>
+				<section data-background="#424d69">
+					<section>
+						<div class="content">
+							<h2>Kelebihan React</h2>
+							<h3>1. Mudah dipelajari dan Dipahami</h3>
+							<p class="fragment">ReactJS mudah dipelajari karena memiliki penulisan code yang deklaratif.  Akan semakin mudah memahami ReactJS jika sudah menguasai dasar-dasar Javascript karena konsep yang digunakan mirip.</p>
+							<h3 class="fragment">2. Dapat dipakai berulang</h3>
+							<p class="fragment">ReactJS memungkinkan kita untuk menggunakan lagi beberapa kode atau semua yang telah dikembangkan ke aplikasi lain sehingga pekerjaan lebih cepat selesai.</p>
+						</div>
+					</section>
+					<section>
+						<div class="content">
+							<h3>3. Fitur JSX</h3>
+							<p class="fragment">ReactJS menggunakan JSX dimana menulis komponen menjadi lebih sederhana karena memungkinkan untuk menggabung HTML dengan javascript.</p>
+							<h3 class="fragment">4.DOM virtual</h3>
+							<p class="fragment">Dengan hadirnya DOM Virtual membuat kita dapat membangun DOM virtual dan menghosting ke dalam memori sehingga website terlihat reaktif.  </p>
+						</div>
+					</section>
+					<section>
+						<div class="content">
+							<h3>5. SEO Friendly</h3>
+							<p class="fragment">ReactJS mendukung SEO, ketika menggunakan library javascript lain, hasilnya akan berbeda dengan saat menggunakan ReactJS, karena javascript yang Anda pakai dari library ini umumnya dapat langsung diterima browser sebagai halaman situs.</p>
+						</div>
+					</section>
+				</section>
+
+				<section data-background="#424d69">
+					<section>
+						<div class="content">
+							<h2>Kekurangan React</h2>
+							<h3 class="fragment">1. View Layer</h3>
+							<p class="fragment">&nbsp;&nbsp;&nbsp;React JS merupakan library javascript dalam bentuk view layer. Framework ini tidak cocok untuk membangun aplikasi dalam skala besar.
+								Kita perlu melengkapinya dengan router, data layer, struktur dan lainnya secara terpisah.</p>
+							<h3 class="fragment">2. Dokumentasi yang Berantakan</h3>
+							<p class="fragment">&nbsp;&nbsp;&nbsp;Dokumentasi pada ReactJS dikatakan kurang bagus karena informasi yang diberikan tidak lengkap. Walau demikian,
+								framework satu ini masih dapat dengan mudah digunakan jika kita rajin mempelajarinya.</p>
+						</div>
+					</section>
+					<section>
+						<div class="content">
+							<h3 class="fragment">3. Dukungan Browser</h3>
+							<p class="fragment">&nbsp;&nbsp;&nbsp;Framework ini hanya bisa digunakan pada browser versi terbaru dan tidak bisa digunakan pada versi lawas.
+								Maka, sebelum menggunakan framework ini kita perlu memerhatikan browser yang kita gunakan.</p>
+						</div>
+					</section>
+				</section>
+				
+				<section data-background="#424d69">
+					<section>
+						<div class="content">
+							<h2>Performansi</h2>
+							<p>Keuntungan besar menggunakan React adalah kinerjanya. React ini dengan cepat menjadi terkenal karena kecepatannya yang luar biasa dan banyak fitur yang memungkinkannya, seperti:</p>
+							<ul>
+								<li>Menggunakan DOM virtual untuk efisiensi maksimum dengan hanya merender ulang node sesuai kebutuhan</li>
+								<li>Dukungan untuk bundling dan tree-shaking untuk meminimalkan beban sumber daya pengguna akhir</li>
+								<li>Dukungan untuk rendering sisi server (SSR) untuk kinerja, visibilitas mesin pencari, dan berbagi sosial</li>
+							</ul>
+						</div>
+					</section>
+					<section>
+						<div class="content">
+							<p>Dengan menggunakan DOM virtual, pengembang dapat dengan mudah meningkatkan kinerja dan mengoptimalkan beban kerja aplikasi. Tidak seperti Angular, pengikatan data satu arah React memastikan aliran data dalam satu arah saat menulis aplikasi React, memberikan kontrol yang lebih baik kepada pengembang atas proyek penuh.</p>
+							<p>React juga mudah diuji. Saat menguji komponen, React memonitor output dari tindakan yang dibuat, membuatnya lebih mudah diakses sehingga Anda dapat memiliki kontrol lebih besar atas bagaimana kode dieksekusi.</p>
+						</div>
+					</section>
+					<section>
+						<div class="content">
+							<p>Dalam istilah yang lebih sederhana, DOM dalam React adalah standar yang mendefinisikan bagaimana Anda mendapatkan, memperbarui, atau memanipulasi elemen HTML. React DOM tahu cara membuat halaman tetapi tidak begitu cerdas untuk melacak setiap node dan komponen yang diperbarui.</p>
+							<p>Ketika pengguna berinteraksi dengan UI, React akan membuat salinan dalam bentuk Virtual DOM dan memperbarui UI setelah membandingkan DOM nyata dengan DOM virtual. Dengan cara ini, item yang perlu diperbarui akan diperbarui tanpa mempengaruhi item lainnya.</p>	
+						</div>
+					</section>
+				</section>
+				
 			</div>
 		</div>
 
