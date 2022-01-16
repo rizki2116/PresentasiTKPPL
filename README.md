@@ -1,6 +1,6 @@
-#Kelompok_5#
-ReactJS
--Rizki Ananda
--Teofilus Kevin Baskara
--Rio Ozora Alaska Sembiring
--Fery Maulana Nasution
+<h1>#Kelompok_5#</h1>
+<h2>ReactJS</h2>
+<p>-Rizki Ananda</p>
+<p>-Teofilus Kevin Baskara</p>
+<p>-Rio Ozora Alaska Sembiring</p>
+<p>-Fery Maulana Nasution</p>
